@@ -1,0 +1,94 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    overflow: hidden;
+    background-color: #0174BE;
+}
+
+.container {
+    width: 360px;
+    background-color: #164863;
+    padding: 20px 30px;
+    border-radius: 5px;
+}
+
+.container h1 {
+    text-align: center;
+    color: #fff;
+    margin-bottom: 20px;
+}
+
+.form-control {
+    position: relative;
+    color: #fff;
+}
+
+.form-control input {
+    border: none;
+    background: transparent;
+    border-bottom: 1px solid #fff;
+    color: #fff;
+    padding: 5px;
+    margin: 20px 0px;
+    width: 100%;
+}
+
+.form-control input:focus,
+.form-control input:valid {
+    outline: none;
+    border-bottom-color: lightblue;
+}
+
+.form-control label {
+    position: absolute;
+    top: 15px;
+    left: 0;
+}
+
+.form-control label span {
+    display: inline-block;
+    font-size: 18px;
+    min-width: 5px;
+    transition: 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+
+.form-control input:focus+label span,
+.form-control input:valid+label span {
+    color: lightblue;
+    transform: translateY(-20px);
+}
+
+.btn {
+    border: none;
+    background-color: #9BBEC8;
+    padding: 10px 20px;
+    width: 100%;
+    border-radius: 5px;
+    margin: 10px 4px;
+    cursor: pointer;
+    transition: transform 0.1s ease-in-out;
+}
+
+.btn:active {
+    transform: scale(0.98);
+}
+
+.text {
+    margin-top: 30px;
+}
+
+.container a {
+    text-decoration: none;
+    color: #DDF2FD;
+}
